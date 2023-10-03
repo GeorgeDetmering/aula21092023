@@ -1,8 +1,6 @@
 import { Request, Response } from "express";
 import { AppDataSource } from "../database/data-source";
 import { User } from "../entities/user";
-import { where } from "sequelize";
-import { userInfo } from "os";
 
 export const cadastrarUsuario = async (req: Request, res: Response) => {
     try {
